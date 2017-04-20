@@ -1,0 +1,20 @@
+jupyter安装
+安装是个坑，通过各种渠道安装失败，pip3等
+最后参照了官网，先[下载anaconda](https://www.continuum.io/downloads),再 conda install jupyter发现已经有了该库
+使用jupyter notebook命令打开
+
+安装库 highchart
+pip3 install charts
+python3 -m pip install charts
+
+安装好了在jupyter中import charts看是否报错，如果报错，使用charts_replace_file文件夹下的文件，替换site-packages/charts文件夹下的相同的文件即可。
+
+可通过
+import sys  
+print(sys.path)
+找到site-packages文件夹目录
+
+
+jupyter使用技巧
+shift+Enter运行
+tab提示

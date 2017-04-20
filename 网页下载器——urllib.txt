@@ -1,0 +1,35 @@
+urllib2下载网页方法1：最简洁方法
+import urllib2
+#直接请求
+response = urllib2.urlopen('http://www.baidu.com')
+#获取状态码，如果是200表示获取成功
+print response.getcode()
+#读取内容
+cont = response.read()
+
+urllib2下载网页方法2：添加data、http header
+import urllib2
+#创建Request对象
+request = urllib2.Request(url)
+#添加数据
+request.add_data('a', 'a')
+#添加http的header
+request.add_header('User-Agent', 'Mozilla/5.0')
+#发送请求获取结果
+response = urllib2.urlopen(request)
+
+urllib2下载网页方法3：添加特殊情景的处理器
+HTTPCookieProcessor
+ProxyHandle
+HTTPSHandle
+HTTPRedirectHandle
+
+import urllib2, cookielib
+#创建cookie容器
+cj = cookielib.CookieJar()
+#创建1个opener
+opener = urllib2.build_opener(urllib2.HTTPCookieProcessor)
+#给urllib2安装opener
+urllib2.install_opener(opener)
+#使用带有cookie的urllib2访问网页
+response = urllib2.urlopen('http://www.baidu.com')
