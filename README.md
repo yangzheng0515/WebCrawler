@@ -1,5 +1,17 @@
 # WebCrawler
 
+## Scrapy/xici
+Scrapy爬取西刺的代理ip，并存储到mongodb，ip待验证 http://www.xicidaili.com/nn/
+
+
+## Scrapy/zhihu
+Scrapy爬取知乎所有用户信息，并存储到mongdb，封ip了，待解决 
+
+
+## Scrapy/doubanBook
+Scrapy爬取豆瓣图书信息，保存为csv格式 https://book.douban.com/tag/%E5%8E%86%E5%8F%B2
+
+
 ## huaban
 异步加载，爬取花瓣网美图 http://huaban.com/
 
