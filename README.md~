@@ -1,8 +1,5 @@
 # WebCrawler
 
-## Ganji_JN.py
-爬取赶集网济南市租房信息 地址：http://jn.ganji.com/fang1/
-
 ## Scrapy/xici
 Scrapy爬取西刺的代理ip，并存储到mongodb，ip待验证 http://www.xicidaili.com/nn/
 
