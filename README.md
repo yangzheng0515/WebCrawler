@@ -1,5 +1,11 @@
 # WebCrawler
 
+## 100offer_crawler
+100offer招聘信息采集 
+
+## caike_crawler
+才客网职业信息采集
+
 ## Ganji_JN.py
 爬取赶集网济南市租房信息 地址：http://jn.ganji.com/fang1/
 
@@ -42,9 +48,6 @@ csv、doc、pdf、txt格式的读写
 ## jupyter
 jupyter的安装与启动
 
-
-## mongodb
-mongodb的安装与基本使用
 
 
 ## craw_bin_tdp
